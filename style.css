@@ -1,0 +1,21 @@
+/*I would like an exercise routine I can carry out at the gym or at home. (Which exercises do I execute on which day)*/
+body, html {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+img {
+    width: 180px;
+    height: 350px;
+}
+a {
+    display: inline-block;
+    margin: 2em;
+}
+
+div {
+    text-align: center;
+}
