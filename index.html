@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
-<body onload="load()">
+<body> <!-- onload="load()" add to body for anchor link transition, link the script.js-->
 	<div id="wrap">
 		<div id="main">
 			<!-- Navigation -->
@@ -27,20 +27,23 @@
 			</nav>
 
 			<!-- Content -->
-			<img src="https://i.postimg.cc/DwGQy4Jn/daniel-apodaca-405078-unsplash.jpg" id="bg" alt="man lifting, greyscale">
-			<h1>Choose your workout Routine</h1>
-			<!--<div class="container">
-	    <div id="buttons">
-	    <a id="home" onclick="homeLoad()" class="btn btn-lg btn-light">Home</a><a id="gym" onclick="gymLoad()" class="btn btn-lg btn-light">Gym</a>
-	    </div>
-	    </div> -->
-			<div class="container" id="daysofweek">
-
+			<h1 class="dark">Choose your Workout Routine</h1>
+            
+            <!-- Option Page -->
+			<div class="split left">
+				<div class="centered">
+					<a class="mainLink mainLink1" href="home.html">Home Workout</a>
+				</div>
+			</div>
+			<div class="split right">
+				<div class="centered">
+					<a class="mainLink mainLink2" href="gym.html">Gym Workout</a>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!--Footer-->
-	<div id="footer" class="footer-dark bg-dark" >
+	<div id="footer" class="footer-dark bg-dark">
 		<div id="contact" class="container center">
 
 

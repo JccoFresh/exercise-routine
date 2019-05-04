@@ -36,6 +36,8 @@ h1 {
     text-align: center;
     font-family: Raleway;
     overflow: hidden;
+    z-index: 1;   /* make nav above split screen */
+    position: relative; /* make nav above split screen */
 }
 
 .nav-right {
@@ -46,6 +48,7 @@ h1 {
     float: left;
 }
 
+/* BodyFit Logo */
 #brand {
     color: #ffffff;
     font-size: 20px;
@@ -55,7 +58,7 @@ h1 {
     height: 30px;
     font-weight: 700;
 }
-
+/* nav links */
 .link {
     transition: 0.4s;
     color: #ffffff;
@@ -81,17 +84,19 @@ h1 {
 #daysofweek {
     text-align: center;
 }
-
+.vertical-align {
+    line-height: 200px; /*works only when single line of text, larger than font-size */
+}
 .day {
-    background-color: #1199A7;
+    background-color: #F6A743;
     text-align: center;
     vertical-align: middle;
     font-size: 20px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     border: 2px solid #fff;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     margin: auto;
     /* Important */
     padding-top: 6.6%;
@@ -105,7 +110,36 @@ h1 {
     /* Opera < 12.1 */
     animation: fadein 2s;
 }
+.day2 {
+    background-color: #4392F6;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #fff;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    /* Important */
+    padding-top: 6.6%;
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+    -o-animation: fadein 2s;
+    /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+.dayWord {
+    font-size: 35px;
+}
 
+.restDay {
+    font-size: 30px;
+}
 #bg {
     /*background image*/
     position: fixed;
@@ -117,8 +151,6 @@ h1 {
     z-index: -1;
 }
 
-
-
 .center {
     text-align: center;
 }
@@ -127,8 +159,7 @@ h1 {
     margin-bottom: 4.5em;
 }
 
-/*.fade {*/
-
+/*Fade In effect */
 /*    -webkit-animation: fadein 2s;*/
 
 /* Safari, Chrome and Opera > 12.1 */
@@ -197,8 +228,8 @@ h1 {
 /*Card Flip */
 
 .flip-card {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
     margin-top: 20px;
@@ -240,7 +271,89 @@ h1 {
 /* Style the back side */
 
 .flip-card-back {
-    background-color: #1199A7;
+    background-color: #F6A743;
     transform: rotateY(180deg);
+    
+}
 
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+/*  z-index: -1; */
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #F6A743;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #4392F6;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Main Page change heading black */
+.dark {
+    color: #000000;
+    z-index: 2;
+    position: relative;
+    font-size: 45px;
+}
+
+/*Main Page links */
+.mainLink {
+    transition: 0.7s;
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 90px 40px;
+    margin: 0 10px;
+    height: 100px;
+}
+
+.mainLink1:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #F6A743;
+    padding: 0px 10px;       /*80px 40px;*/
+    height: 100px;
+}
+.mainLink2:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #4392F6;
+    padding: 0px 10px;
+    height: 100px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 45px;
+  text-align: center; 
+  margin: 1em 5em 1em 12em;
+}
+
+/* advanced */
+#advanced {
+    margin: 1em 1em 1em 9.5em;
+    font-size: 20px;
+    font-weight: 700;
 }
