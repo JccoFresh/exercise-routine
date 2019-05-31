@@ -320,12 +320,11 @@ h1 {
 .mainLink {
     transition: 0.7s;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     padding: 90px 40px;
-    margin: 0 10px;
     height: 100px;
-}
+} 
 
 .mainLink1:hover {
     text-decoration: none;
@@ -340,15 +339,6 @@ h1 {
     color: #4392F6;
     padding: 0px 10px;
     height: 100px;
-}
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 45px;
-  text-align: center; 
-  margin: 1em 5em 1em 12em;
 }
 
 /* advanced */
